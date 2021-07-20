@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="RegisterPage.css">
+</head>
+<body>
+    <div id="web-container">
+        <div id="left">
+            <img src="../Assets/Logo_HCI/putihfix.png">
+        </div>
+        <div id="right">
+            <h1>REGISTER MEMBERSHIP</h1>
+            <form id="form">
+            <input class="register" type="text" placeholder="USERNAME" id="username" value="">
+            <input class="register" type="password" placeholder="PASSWORD" id="password" value="">
+            <input class="register" type="password" placeholder="CONFIRMATION PASSWORD" id="conf-password" value="">
+            <input class="register" type="text" placeholder="FULLNAME" id="fullname" value="">
+            <textarea class="register" type="text" placeholder="ADDRESS" id="address" value=""></textarea>
+            <select class="register" name="state" id="state" value="">
+                <option value="">STATE OF PROVINCE</option>
+                <option>Banten</option>
+                <option>Jawa Barat</option>
+                <optgroup label="DKI Jakarta">
+                    <option>Jakarta Barat</option>
+                    <option>Jakarta Pusat</option>
+                    <option>Jakarta Timur</option>
+                    <option>Jakarta Selatan</option>
+                    <option>Jakarta Utara</option>
+                </optgroup>
+                <option>Jawa Tengah</option>
+                <option>DIY Yogyakarta</option>
+                <option>Jawa Timur</option>
+                <option>Bali</option>
+                <option>Nusa Tenggara Barat</option>
+                <option>Nusa Tenggara Timur</option>
+            </select>
+            <select class="register" id="gender" value="">
+                <option value="">GENDER</option>
+                <option value="">MALE</option>
+                <option value="">FEMALE</option>
+            </select>
+            <input class="register" id="age" type="number" placeholder="AGE" value="">
+            </form>
+            <input id="terms" type="checkbox" value="">TERMS AND CONDITION AGREEMENT
+            <button id="submit-btn" onclick="checkInputs()">REGISTER
+        </div>
+    </div>
+    <script src="RegisterPage.js"></script>
+</body>
+</html>
